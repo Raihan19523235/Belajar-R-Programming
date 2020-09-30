@@ -21,7 +21,9 @@ M[c("satu","dua"),]
 N <- matrix(c(1:9),3,3,TRUE)
 which(N[,1]>2)
 which(N[2,]<5)
+
 N[N > 3] <- 2 #Exercise
+N
 
 P <- matrix(c(1,2,3,4),2,2,TRUE)
 Q <- matrix(c(4,6,2,7),2,2,TRUE)
@@ -40,8 +42,8 @@ det(A)
 solve(A)
 
 #Exercise
-g <- matrix(c(1:100),10,10,TRUE) #Urut
-G <- matrix(c(sample(c(1:100))),10,10,TRUE) #Acak
+value <- matrix(c(sample(c(1:100))),10,10,TRUE) #Acak
+G <- matrix(value,10,10,TRUE) 
 H <- t(G)
 J <- G + H
 det(G)
@@ -49,3 +51,5 @@ det(H)
 det(J)
 K <- cbind(G[,1:5],J[,1:5])
 Hasil4.5 <- G %*% solve(G)
+
+Hasil4.5 #Jawaban
