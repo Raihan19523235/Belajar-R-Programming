@@ -42,13 +42,16 @@ det(A)
 solve(A)
 
 #Exercise
-value <- matrix(c(sample(c(1:100))),10,10,TRUE) #Acak
-G <- matrix(value,10,10,TRUE) 
+value <- matrix(c(sample(c(1:100))),10,10,TRUE)
+G <- matrix(value,10,10,TRUE) #Acak
 H <- t(G)
 J <- G + H
-det(G)
-det(H)
-det(J)
+detG <- det(G)
+detG
+detH <- det(H)
+detH
+detJ <- det(J)
+detJ
 K <- cbind(G[,1:5],J[,1:5])
 Hasil4.5 <- G %*% solve(G)
 
