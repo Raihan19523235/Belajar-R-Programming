@@ -29,7 +29,7 @@ P + Q
 Q - P
 2 * P
 R <- P / 3
-S <- P %???% Q
+S <- P %*% Q
 T <- cbind(P[,1],Q[,2])
 U <- rbind(P[1,],Q[2,])
 
