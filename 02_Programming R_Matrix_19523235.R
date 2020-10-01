@@ -42,7 +42,7 @@ det(A)
 solve(A)
 
 #Exercise
-value <- matrix(c(sample(c(1:100))),10,10,TRUE)
+value <- matrix(c(sample(c(1:1000))),10,10,TRUE)
 G <- matrix(value,10,10,TRUE) #Acak
 H <- t(G)
 J <- G + H
