@@ -42,6 +42,7 @@ det(A)
 solve(A)
 
 #Exercise
+?sample
 value <- sample(1:1000,100,replace = FALSE)
 G <- matrix(value,10,10,TRUE) #Acak
 H <- t(G)
