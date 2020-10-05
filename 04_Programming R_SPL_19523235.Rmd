@@ -1,0 +1,69 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+#Excercise SPL
+```{r}
+#Nomor 1
+A1 <- matrix(c(5,-4,-1,1),2,2,TRUE)
+b1 <- c(-10,2)
+showEqn(A1,b1) 
+```
+```{r}
+Solve(A1,b1) 
+```
+```{r}
+plotEqn(A1,b1) 
+```
+```{r}
+echelon(A1,b1)
+```
+
+```{r}
+#Nomor 2
+A2 <- matrix(c(4,-2,0,5,-2,1,3,4,-1),3,3,TRUE)
+b2 <- c(2,7,3)
+showEqn(A2,b2) 
+```
+```{r}
+Solve(A2,b2) 
+
+```
+```{r}
+plotEqn3d(A2,b2) 
+```
+```{r}
+echelon(A2,b2)
+```
+```{r}
+#Nomor 3
+A3 <- matrix(c(1,1,1,2,3,5,4,0,5),3,3,TRUE)
+b3 <- c(5,8,2)
+showEqn(A3,b3) 
+```
+```{r}
+Solve(A3,b3) 
+```
+```{r}
+plotEqn3d(A3,b3) 
+```
+```{r}
+echelon(A3,b3)
+```
+```{r}
+#Nomor 4
+A4 <- matrix(c(2,5,1,-1,4,3,5,0,-2),3,3,TRUE)
+b4 <- c(-12,-4,-13)
+showEqn(A4,b4) 
+```
+```{r}
+Solve(A4,b4) 
+```
+```{r}
+plotEqn3d(A4,b4) 
+```
+```{r}
+echelon(A4,b4)
+```
+
